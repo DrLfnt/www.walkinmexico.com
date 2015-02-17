@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+    <head>
+        <!-- Metas -->
+        <meta charset="utf-8" />
+        <meta name="theme-color" content="#E50C7E" />
+        <meta http-equiv="refresh" content="1600" />
+        <meta name="author" content="Argenis Oldair Palacios @DrLfnt" href="https://plus.google.com/+ArgenisOldairPalaciosDrLfnt" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta http-equiv="cleartype" content="on" />
+        <!-- Mobile Internet Explorer ClearType Technology -->
+        <!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-TileImage" content="icons/icon-144.png">
+        <meta name="msapplication-TileColor" content="#009587">
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
+        <meta name="description" content="UX and UI Designer, Frontend Developer, Digital Strategist" />
+        <!-- App Name and Title -->
+        <meta name="application-name" content="Pawzie" />
+        <meta name="apple-mobile-web-app-title" content="Pawzie" />
+        <!-- App Name and Title -->
+            <!-- Metas -->
+        <!-- Titulo -->
+        <title title="pawzie - Tienda para mascotas - Pet shop">Walk In Mexico</title>
+        <!-- Titulo -->
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+        <!-- Favicon -->
+        <!-- Android Icon -->
+        <link rel="icon" sizes="196x196" href="icons/icon-196.png"/>
+        <link rel="icon" sizes="128x128" href="icons/icon-128.png"/>
+        <!-- Android Icon -->
+        <!-- Apple Icon -->
+        <link rel="apple-touch-startup-image" href="icons/icon.png" />
+        <link rel="apple-touch-icon" href="icons/icon.png"/>
+        <link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="icons/icon-128.png"/>
+        <!-- Apple Icon -->
+        <!-- Apple Retina Icon -->
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/icon-76.png"/>
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/icon-120.png"/>
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/icon-152.png"/>
+        <!-- Apple Retina Icon -->
+        <link rel="author" type="text/plain" href="humans.txt">
+        <style>
+            @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css);
+            @import 'css/ripples.min.css';
+            @import 'css/material-wfont.min.css';
+            @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
+            @import url(http://fonts.googleapis.com/css?family=Roboto);
+            html {
+                font-size: 18px !important;
+            }
+            body {
+                background: #EEEEEE url(.images/bgCarton.jpg) no-repeat center center fixed;
+                background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                -webkit-background-size: cover;
+                font-family: 'Grand Hotel', cursive;
+            }
+            figcaption {
+                background-color: rgba(255,255,255,.5);
+                border-radius: .2em;
+                margin: 1em;
+                padding: 1em;
+                -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+                box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+            }
+            /* fonts */
+            .grandhotel {
+                font-family: 'Grand Hotel', cursive !important;
+                font-size: 22px;
+            }
+            .roboto {
+                font-family: 'Roboto', sans-serif;
+            }
+            /* fonts */
+            /* colors pawzie */
+            .verde {
+                color: #DDDC09;
+            }
+            .bg-verde {
+                background-color: #DDDC09;
+            }
+            .rosa {
+                color: #E50C7E;
+            }
+            .bg-rosa {
+                background-color: #E50C7E;
+            }
+            /* colors pawzie */
+            /* fx */
+            .fxOutlineWhite {
+                text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;    
+            }
+            /* fx */
+            /* Selectors */
+            *::-moz-selection{
+                background: #DDDC09;
+                color: #E50C7E;
+            }
+            *::selection {
+                background: #DDDC09;
+                color: #E50C7E;
+            }
+            /* Selectors */
+        </style>
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient {
+            filter: none;
+            }
+        </style>
+        <![endif]-->
+        <!-- Robots.txt -->
+        <meta name="robots" content="index,follow">
+        <!-- Robots.txt -->
+        <script>
+        // iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
+        (function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
+        </script>
+    </head>
+
+    <body class="clearfix">
+
+        <div class="container-fluid">
+                
+                <div class="hidden row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <center>
+                            <img src="http://disainco.com/pawzie/images/pawzieLogotipo.svg" class="img-responsive" alt="pawzie">
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="navbar navbar-default">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="javascript:void(0)"><img src="http://disainco.com/pawzie/images/pawzieLogotipo.svgg" height="35px" alt="Brand"></a>
+                            </div>
+                            <div class="navbar-collapse collapse navbar-responsive-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="javascript:void(0)">Link</a></li>
+                                    <li><a href="javascript:void(0)">Link</a></li>
+                                    <li class="dropdown">
+                                        <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Link <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li class="divider"></li>
+                                            <li class="dropdown-header">Link</li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="javascript:void(0)">Link</a></li>
+                                    <li class="dropdown">
+                                        <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Link <b class="caret"></b></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li class="divider"></li>
+                                            <li><a href="javascript:void(0)">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <section class="row">
+                    <section class="col-md-12">
+                        <h2 class="text-center gloria fxOutlineWhite rosa">
+                            Walk in Mexico City
+                        </h2>
+                        <center>
+                            <figure class="col-sm-6 col-md-4">
+                                <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
+                                <figcaption>
+                                    <h2 class="pacifico">WIM</h2>
+                                    <p class="roboto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe totam aliquid, dolores repudiandae, facere mollitia voluptates ratione ex, itaque dolore repellat qui expedita distinctio explicabo dignissimos. Consectetur, incidunt earum quas.
+                                    </p> 
+                                </figcaption>
+                            </figure>
+                        </center>
+                        <center class="visible-xs hidden-sm visible-md visible-lg">
+                            <figure class="col-sm-6 col-md-4">
+                                <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
+                                <figcaption>
+                                    <h2 class="pacifico">WIM</h2>
+                                    <p class="roboto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus architecto excepturi facilis a in repellat optio obcaecati provident harum veniam neque quas voluptatem, tenetur dolor vero ipsum, deserunt sequi consequatur.
+                                    </p> 
+                                </figcaption>
+                            </figure>
+                        </center>
+                        <center>
+                            <figure class="col-sm-6 col-md-4">
+                                <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
+                                <figcaption>
+                                    <h2 class="pacifico">WIM</h2>
+                                    <p class="roboto">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ipsa impedit accusantium veniam optio consequatur aperiam atque amet mollitia doloribus culpa, hic laborum, quasi recusandae temporibus modi aliquam quibusdam perferendis.
+                                    </p> 
+                                </figcaption>
+                            </figure>
+                        </center>
+                    </section>
+                </section>
+
+            <!-- Buttons
+================================================== -->
+            <div class="hidden bs-docs-section">
+                <div class="page-header">
+                    <div class="row">
+
+                        <div class="col-lg-12">
+                            <h1 id="buttons">Buttons</h1>
+                        </div>
+
+                    <div class="col-lg-6">
+
+                        <h3>defaultButtons</h3>
+                        <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                        <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                        <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                        <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                        <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                        <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                        <a href="javascript:void(0)" class="btn btn-link">Link</a>
+
+                        <h3>buttonsGroups</h3>
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-default">Default</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-primary">Primary</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-success">Success</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-info">Info</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-warning">Warning</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="btn-group">
+                            <a href="javascript:void(0)" class="btn btn-danger">Danger</a>
+                            <a href="bootstrap-elements.html" data-target="#" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="javascript:void(0)">Action</a></li>
+                                <li><a href="javascript:void(0)">Another action</a></li>
+                                <li><a href="javascript:void(0)">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="javascript:void(0)">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <h3>buttonSizes</h3>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-lg">Large button</a>
+                        <a href="javascript:void(0)" class="btn btn-primary">Default button</a>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-sm">Small button</a>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-xs">Mini button</a>
+
+                        <h3>floatingActionButtons</h3>
+                        <a href="javascript:void(0)" class="btn btn-default btn-fab btn-raised mdi-action-grade"></a>
+                        <a href="javascript:void(0)" class="btn btn-primary btn-fab btn-raised mdi-action-grade"></a>
+                        <a href="javascript:void(0)" class="btn btn-success btn-fab btn-raised mdi-action-grade"></a>
+                        <a href="javascript:void(0)" class="btn btn-info btn-fab btn-raised mdi-action-grade"></a>
+                        <a href="javascript:void(0)" class="btn btn-warning btn-fab btn-raised mdi-action-grade"></a>
+                        <a href="javascript:void(0)" class="btn btn-danger btn-fab btn-raised mdi-action-grade"></a>
+
+
+                    </div>
+                    <div class="col-lg-6">
+
+                        <a href="javascript:void(0)" class="btn btn-success btn-lg btn-block">Block level button</a>
+
+                        <div style="margin-bottom: 15px;">
+                            <div class="btn-group btn-group-justified">
+                                <a href="javascript:void(0)" class="btn btn-default">Left</a>
+                                <a href="javascript:void(0)" class="btn btn-default">Middle</a>
+                                <a href="javascript:void(0)" class="btn btn-default">Right</a>
+                                <a href="javascript:void(0)" class="btn btn-default">Left</a>
+                                <a href="javascript:void(0)" class="btn btn-default">Middle</a>
+                                <a href="javascript:void(0)" class="btn btn-default">Right</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>  
+
+            <!-- Typography
+================================================== -->
+            <div class="bs-docs-section">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h1>Typography</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Headings -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Example body text</h2>
+                        <p>Nullam quis risus eget <a href="javascript:void(0)">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                        <p><small>This line of text is meant to be treated as fine print.</small></p>
+                        <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+                        <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+                        <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <h2>Emphasis classes</h2>
+                        <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+                        <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+                        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+                        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                    </div>
+                </div>
+
+                <!-- Blockquotes -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 id="type-blockquotes">Blockquotes</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <blockquote>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                    </div>
+                    <div class="col-lg-6">
+                        <blockquote class="pull-right">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                        </blockquote>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tabs
+================================================== -->
+            <div class="bs-docs-section">
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2 id="nav-tabs">Tabs</h2>
+                        <div>
+                            <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+                                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                                <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                                <li class="disabled"><a>Disabled</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="bootstrap-elements.html" data-target="#">
+                                        Dropdown <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content">
+                                <div class="tab-pane fade active in" id="home">
+                                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                    <img src="http://disainco.com/pawzie/images/pawzieLogotipo.svg" class="img-responsive" alt="pawzie">
+                                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+                                </div>
+                                <div class="tab-pane fade" id="dropdown1">
+                                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.</p>
+                                </div>
+                                <div class="tab-pane fade" id="dropdown2">
+                                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Indicators
+================================================== -->
+            <div class="bs-docs-section">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h1 id="indicators">Indicators</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Alerts</h2>
+                        <div >
+                            <div class="alert alert-dismissable alert-warning"><!-- alert-warning alert-danger alert-success alert-info -->
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                <h4>Warning!</h4>
+                                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Containers
+================================================== -->
+            <div class="bs-docs-section">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-header">
+                            <h1 id="container">Containers</h1>
+                        </div>
+                        <div class="jumbotron">
+                            <h1>Jumbotron</h1>
+                            <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                            <p><a class="btn btn-primary btn-lg">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>Panels</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    Basic panel
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Panel heading</div>
+                                <div class="panel-body">Panel content</div>
+                                <div class="panel-footer">Panel footer</div>
+                            </div>
+
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4">
+                        <div>
+                            <div class="panel panel-primary"> <!-- panel-success panel-warning panel-danger panel-info -->
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Panel primary</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Panel content
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+        <script>
+            $(function() {
+                $.material.init();
+                $(".shor").noUiSlider({
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+
+                $(".svert").noUiSlider({
+                    orientation: "vertical",
+                    start: 40,
+                    connect: "lower",
+                    range: {
+                        min: 0,
+                        max: 100
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
