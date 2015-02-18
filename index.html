@@ -20,12 +20,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
         <meta name="description" content="UX and UI Designer, Frontend Developer, Digital Strategist" />
         <!-- App Name and Title -->
-        <meta name="application-name" content="Pawzie" />
-        <meta name="apple-mobile-web-app-title" content="Pawzie" />
+        <meta name="application-name" content="Walk in Mexico" />
+        <meta name="apple-mobile-web-app-title" content="Walk in Mexico" />
         <!-- App Name and Title -->
             <!-- Metas -->
         <!-- Titulo -->
-        <title title="pawzie - Tienda para mascotas - Pet shop">Walk In Mexico</title>
+        <title title="Walk in Mexico">Walk In Mexico</title>
         <!-- Titulo -->
         <!-- Favicon -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
@@ -48,6 +48,7 @@
         <link rel="author" type="text/plain" href="humans.txt">
         <style>
             @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css);
+            @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
             @import 'css/ripples.min.css';
             @import 'css/material-wfont.min.css';
             @import url(http://fonts.googleapis.com/css?family=Grand+Hotel);
@@ -56,12 +57,20 @@
                 font-size: 18px !important;
             }
             body {
-                background: #EEEEEE url(.images/bgCarton.jpg) no-repeat center center fixed;
+                background: #EEEEEE url(images/bg-map.jpg) no-repeat center center fixed;
                 background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 -webkit-background-size: cover;
-                font-family: 'Grand Hotel', cursive;
+            }
+            .box {
+                background-color: rgba(255,255,255,.95);
+                border-radius: .2em;
+                margin: 1em;
+                padding: 1em;
+                -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+                -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
+                box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
             }
             figcaption {
                 background-color: rgba(255,255,255,.5);
@@ -75,26 +84,14 @@
             /* fonts */
             .grandhotel {
                 font-family: 'Grand Hotel', cursive !important;
-                font-size: 22px;
+                font-size: 2em;
             }
             .roboto {
                 font-family: 'Roboto', sans-serif;
             }
             /* fonts */
-            /* colors pawzie */
-            .verde {
-                color: #DDDC09;
-            }
-            .bg-verde {
-                background-color: #DDDC09;
-            }
-            .rosa {
-                color: #E50C7E;
-            }
-            .bg-rosa {
-                background-color: #E50C7E;
-            }
-            /* colors pawzie */
+            /* colors Walk In Mexico */
+            /* colors Walk In Mexico */
             /* fx */
             .fxOutlineWhite {
                 text-shadow:-1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;    
@@ -102,14 +99,25 @@
             /* fx */
             /* Selectors */
             *::-moz-selection{
-                background: #DDDC09;
-                color: #E50C7E;
+                background: #333;
+                color: #FF5722;
             }
             *::selection {
-                background: #DDDC09;
-                color: #E50C7E;
+                background: #333;
+                color: #FF5722;
             }
             /* Selectors */
+            /* Styles */
+            .fs1-5em {
+                font-size: 1.5em;
+            }
+            .fs2em {
+                font-size: 2em;
+            }
+            .fs3em {
+                font-size: 3em;
+            }
+            /* Styles */
         </style>
         <!--[if gte IE 9]>
         <style type="text/css">
@@ -134,7 +142,7 @@
                 <div class="hidden row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <center>
-                            <img src="http://disainco.com/pawzie/images/pawzieLogotipo.svg" class="img-responsive" alt="pawzie">
+                            <!--<img src="images/Logotipo.svg" class="img-responsive" alt="Walk In Mexico">-->
                         </center>
                     </div>
                 </div>
@@ -142,42 +150,31 @@
                 <div class="row">
                     <div class="col-lg-12">
 
-                        <div class="navbar navbar-default">
+                        <div class="navbar navbar-material-deep-orange">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="javascript:void(0)"><img src="http://disainco.com/pawzie/images/pawzieLogotipo.svgg" height="35px" alt="Brand"></a>
+                                <a class="navbar-brand" href="javascript:void(0)">
+                                    <span class="grandhotel fs2em">Walk in Mexico</span><!--<img src="http://disainco.com/pawzie/images/pawzieLogotipo.svgg" height="35px" alt="Brand">--></a>
                             </div>
                             <div class="navbar-collapse collapse navbar-responsive-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li class="active"><a href="javascript:void(0)">Link</a></li>
-                                    <li><a href="javascript:void(0)">Link</a></li>
-                                    <li class="dropdown">
-                                        <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Link <b class="caret"></b></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li class="divider"></li>
-                                            <li class="dropdown-header">Link</li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="javascript:void(0)">Link</a></li>
+                                    <li class="active"><a href="javascript:void(0)">Home <i class="fa fa-home"></i></a></li>
+                                    <li><a href="javascript:void(0)">Tours <i class="fa fa-map-marker"></i></a></li>
+                                    <li><a href="javascript:void(0)">About Us <i class="fa fa-group"></i></a></li>
+                                    <li><a href="javascript:void(0)">Book Now <i class="fa fa-book"></i></a></li>
                                     <li class="dropdown">
-                                        <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Link <b class="caret"></b></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <b class="caret"></b></a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> Instagram</a></li>
                                             <li class="divider"></li>
-                                            <li><a href="javascript:void(0)">Link</a></li>
+                                            <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> Mail</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -189,10 +186,41 @@
 
                 <section class="row">
                     <section class="col-md-12">
-                        <h2 class="text-center gloria fxOutlineWhite rosa">
+                        <h1 class="text-center grandhotel fs3em fxOutlineWhite">
                             Walk in Mexico City
-                        </h2>
+                        </h1>
+                            <div class="box col-md-6">
+                                <p>
+                                    <h2>Lorem ipsum</h2>
+                                    <span>
+                                        <span class="text-muted fs1-5em">Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit. Repudiandae dolores atque fugiat ipsum quo aperiam non, suscipit, sint, corporis quos tenetur iusto adipisci aspernatur necessitatibus eligendi beatae sequi minus debitis.
+                                    </span><br><br>
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores atque fugiat ipsum quo aperiam non, suscipit, sint, corporis quos tenetur iusto adipisci aspernatur necessitatibus eligendi beatae sequi minus debitis.
+                                    </span><br><br>
+                                    <h2>Lorem ipsum</h2>
+                                    <span>
+                                        <span class="text-muted fs1-5em">Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit. Repudiandae dolores atque fugiat ipsum quo aperiam non, suscipit, sint, corporis quos tenetur iusto adipisci aspernatur necessitatibus eligendi beatae sequi minus debitis.
+                                    </span><br><br>
+                                    <span>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae dolores atque fugiat ipsum quo aperiam non, suscipit, sint, corporis quos tenetur iusto adipisci aspernatur necessitatibus eligendi beatae sequi minus debitis.
+                                    </span><br><br>
+                                    <span>
+                                        Nam quidem ratione animi error illo ab. Cupiditate possimus vel, sapiente incidunt. Esse sapiente unde mollitia nihil, a soluta, quis doloremque rem obcaecati est numquam totam, eum dignissimos aspernatur laboriosam.
+                                    </span><br><br>
+                                    <span>
+                                        Odit fugiat sequi beatae veniam maxime tempora eius, aliquid sapiente adipisci ipsa deserunt dolore illum facilis, magnam dolorem ullam id cumque velit dignissimos unde esse. Possimus quos tempore, quo quidem.
+                                    </span>
+                                </p>
+                            </div>
                         <center>
+                            <div class="box col-md-5">
+                                <figure>
+                                    <img class="img-responsive img-thumbnail" src="http://lorempixel.com/g/500/700/" alt="lorempixel">
+                                </figure>
+                            </div>
+                        </center>
+                        <center class="hidden">
                             <figure class="col-sm-6 col-md-4">
                                 <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
                                 <figcaption>
@@ -203,7 +231,7 @@
                                 </figcaption>
                             </figure>
                         </center>
-                        <center class="visible-xs hidden-sm visible-md visible-lg">
+                        <center class="hidden visible-xs hidden-sm visible-md visible-lg">
                             <figure class="col-sm-6 col-md-4">
                                 <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
                                 <figcaption>
@@ -214,7 +242,7 @@
                                 </figcaption>
                             </figure>
                         </center>
-                        <center>
+                        <center class="hidden">
                             <figure class="col-sm-6 col-md-4">
                                 <img class="maxWidth250 img-responsive img-circle img-thumbnail" src="http://lorempixel.com/g/400/400/" alt="PlaceKitten">
                                 <figcaption>
